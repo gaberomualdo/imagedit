@@ -7,7 +7,20 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<h1><input type="text" placeholder="Enter image source here..."><button>Go!</button></body></h1>
+	<h1 id='imgSrcForm'><input type="text" placeholder="Enter image source here..."><button>Go!</button></body></h1>
+	<div id="mainImageEditArea">
+		<img id="mainImage">
+		<div class="imageEditing">
+			<input id="blur" type='text' placeholder="Blur (px)...">
+			<input id="grayscale" type='text' placeholder="Grayscale (%)...">
+			<input id="invert" type='text' placeholder="Invert (%)...">
+			<input id="sepia" type='text' placeholder="Sepia (%)...">
+			<input id="hue-rotate" type='text' placeholder="Color Wheel Rotate (deg)...">
+			<input id="opacity" type='text' placeholder="Opacity (%)...">
+			<input id="brightness" type='text' placeholder="Brightness (%)...">
+			<input id="contrast" type='text' placeholder="Contrast (%)...">
+		</div>
+	</div>
 </body>
 <script type="text/javascript" src='script.js'></script>
 </html>
