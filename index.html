@@ -21,14 +21,14 @@
 	<div id="mainImageEditArea" style='display: none;'>
 		<div id="mainImage"></div>
 		<div id="imageEditing">
-			<div><p>Blur (px)</p><input class="blur" unit="px" type='number'></div>
-			<div><p>Grayscale (%)</p><input class="grayscale" unit="%" type='number'></div>
-			<div><p>Invert (%)</p><input class="invert" unit="%" type='number'></div>
-			<div><p>Sepia (%)</p><input class="sepia" unit="%" type='number'></div>
+			<div><p>Blur (px)</p><input min='0' class="blur" unit="px" type='number'></div>
+			<div><p>Grayscale (%)</p><input min='0' class="grayscale" unit="%" type='number'></div>
+			<div><p>Invert (%)</p><input min='0' class="invert" unit="%" type='number'></div>
+			<div><p>Sepia (%)</p><input min='0' class="sepia" unit="%" type='number'></div>
 			<div><p>Color Wheel Rotate (deg)</p><input class="hue-rotate" unit="deg" type='number'></div>
-			<div><p>Opacity (%)</p><input value='100' class="opacity" unit="%" type='number'></div>
-			<div><p>Brightness (%)</p><input value='100' class="brightness" unit="%" type='number'></div>
-			<div><p>Contrast (%)</p><input value='100' class="contrast"  unit="%" type='number'></div>
+			<div><p>Opacity (%)</p><input min='0' value='100' class="opacity" unit="%" type='number'></div>
+			<div><p>Brightness (%)</p><input min='0' value='100' class="brightness" unit="%" type='number'></div>
+			<div><p>Contrast (%)</p><input min='0' value='100' class="contrast"  unit="%" type='number'></div>
 		</div>
 	</div>
 </body>
