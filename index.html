@@ -5,20 +5,30 @@
 	<title>Imagedit</title>
 
 	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">	
 </head>
+
+<style id='mainImageBackgroundImage'>
+
+</style>
+<style id='mainImageEdits'>
+
+</style>
+
 <body>
-	<h1 id='imgSrcForm'><input type="text" placeholder="Enter image source here..."><button onclick='openImage(this.parentElement.getElementsByTagName("input")[0])'>Go!</button></body></h1>
+	<h1 id='imgSrcForm'><input type="text" placeholder="Enter image source here..."><button onclick='openImage(this.parentElement.getElementsByTagName("input")[0].value)'>Go!</button></body></h1>
 	<div id="mainImageEditArea" style='display: none;'>
-		<img id="mainImage">
-		<div class="imageEditing">
-			<input id="blur" type='text' placeholder="Blur (px)...">
-			<input id="grayscale" type='text' placeholder="Grayscale (%)...">
-			<input id="invert" type='text' placeholder="Invert (%)...">
-			<input id="sepia" type='text' placeholder="Sepia (%)...">
-			<input id="hue-rotate" type='text' placeholder="Color Wheel Rotate (deg)...">
-			<input id="opacity" type='text' placeholder="Opacity (%)...">
-			<input id="brightness" type='text' placeholder="Brightness (%)...">
-			<input id="contrast" type='text' placeholder="Contrast (%)...">
+		<div id="mainImage"></div>
+		<div id="imageEditing">
+			<div><p>Blur (px)</p><input class="blur" unit="px" type='number'></div>
+			<div><p>Grayscale (%)</p><input class="grayscale" unit="%" type='number'></div>
+			<div><p>Invert (%)</p><input class="invert" unit="%" type='number'></div>
+			<div><p>Sepia (%)</p><input class="sepia" unit="%" type='number'></div>
+			<div><p>Color Wheel Rotate (deg)</p><input class="hue-rotate" unit="deg" type='number'></div>
+			<div><p>Opacity (%)</p><input value='100' class="opacity" unit="%" type='number'></div>
+			<div><p>Brightness (%)</p><input value='100' class="brightness" unit="%" type='number'></div>
+			<div><p>Contrast (%)</p><input value='100' class="contrast"  unit="%" type='number'></div>
 		</div>
 	</div>
 </body>
